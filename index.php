@@ -14,6 +14,11 @@
         if(!empty($_REQUEST['page'])) {
     
             switch($_REQUEST['page']) {
+
+                case 'relVeiculoVelocidade':
+                    require('pages/relVeiculoVelocidade/veiculo_velocidade.php');
+                    JSRequire('relVeiculoVelocidade', 'RelVeiculoVelocidade.js');
+                    break;
     
                 case 'relVeiculo':
                     require('pages/relVeiculo/veiculo.php');

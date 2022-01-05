@@ -15,7 +15,7 @@ if($db->connect()) {
             f.nome,
             fc.nome AS funcao
         FROM funcionarios f
-        INNER JOIN funcao fc ON fc.id = f.funcao_id
+        INNER JOIN funcoes fc ON fc.id = f.funcao_id
         {$where}"
     );
 

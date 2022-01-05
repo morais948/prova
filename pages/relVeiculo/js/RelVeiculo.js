@@ -64,6 +64,7 @@ Cmp.RelVeiculo = function() {
 
     this.init = function() {
         private.render();
+        private.buscar();
     }
 
 }

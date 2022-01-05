@@ -59,6 +59,7 @@ Cmp.RelFuncionario = function() {
 
     this.init = function() {
         private.render();
+        private.buscar();
     }
 
 }

@@ -70,7 +70,7 @@ var Cmp = {
         }
     },
 
-    input: function(config) {
+    input: function(config, type = 'text') {
         if (config.id == undefined || config.id == '') {
             return;
         }
@@ -88,7 +88,7 @@ var Cmp = {
             );
         }
 
-        var input = $('<input>', { type: 'text', id: config.id, class: 'form-control' });
+        var input = $('<input>', { type, id: config.id, class: 'form-control' });
 
         mainEl.append(input);
 
@@ -194,8 +194,8 @@ var Cmp = {
         return new Cmp.button(config);
     },
 
-    createInput: function(config) {
-        return new Cmp.input(config);
+    createInput: function(config, type) {
+        return new Cmp.input(config, type);
     },
 
     createGrid: function(config) {

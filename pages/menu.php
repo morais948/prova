@@ -12,6 +12,7 @@
                 <a class="nav-link dropdown-toggle" href="#" id="menu-relatorios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Relatórios</a>
                 <div class="dropdown-menu" aria-labelledby="menu-relatorios">
                     <a class="dropdown-item" href="index.php?page=relVeiculo">Veículos</a>
+                    <a class="dropdown-item" href="index.php?page=relVeiculoVelocidade">Veículos acima da velocidade máxima</a>
                     <a class="dropdown-item" href="index.php?page=relFuncionario">Funcionário</a>
                 </div>
             </li>
